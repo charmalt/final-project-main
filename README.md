@@ -11,9 +11,9 @@
 ```
 
 ***
-[Summary](#summary)<br/>
-[The Project](#project): [Team process](#team-process) - [Original plan](#plan) - [Key learnings](#learnings) - [Potential enhancements](#enhancements)<br/>
-[The Service](#service) - [Technical architecture](#architecture) - [Send email](#workflow-send) - [Receive email](#workflow-receive) - [Installation](#installation) [Contributors](#contributors)
+**[Summary](#summary)**<br/>
+**[The Project](#project)**: [Team process](#team-process) - [Original plan](#plan) - [Key learnings](#learnings) - [Potential enhancements](#enhancements)<br/>
+**[The Service](#service)**: [Technical architecture](#architecture) - [Send email](#workflow-send) - [Receive email](#workflow-receive) - [Installation](#installation) [Contributors](#contributors)
 ***
 
 ## <a name="summary">Summary</a>
@@ -32,8 +32,9 @@ We kept to a daily cycle of agile ceremonies of morning standup, post-lunch chec
 We planned extensively at the beginning of the project the steps that our systems would need to go through, you can see that below.
 
 
-### <a name"plan">Original plan and Minimal Viable Product (MVP)</a>
-[image here]
+### <a name"plan">Original plan</a> and Minimal Viable Product (MVP)
+![MVP workflow](https://github.com/charmalt/final-project-main/blob/master/images/mvp-as-agreed.png "MVP workflow")
+
 Our MVP was to complete the process of a message from the point a user clicks 'send' through to the message entering another user's inbox, essentially all the solid line boxes above.
 
 
@@ -57,14 +58,17 @@ As the point of the project was to understand and recreate the full email proces
 ## <a name="architecture">Technical architecture</a>
 ![Summary of our technical architecture](https://github.com/charmalt/final-project-main/blob/master/images/summary-architecture.png "Summary of our technical architecture")
 
-[ Table of tech used here? ]
+Table of tech used here?
+
 
 ### <a name="workflow-send">Final send an email workflow</a>
+
 ![Send an email workflow](https://github.com/charmalt/final-project-main/blob/master/images/workflow-send.png "Send an email workflow")
 
 Words here.
 
 ### <a name="workflow-receive">Final receive an email workflow</a>
+
 ![Receive an email workflow](https://github.com/charmalt/final-project-main/blob/master/images/workflow-receive.png "Receive an email workflow")
 
 Words here.
