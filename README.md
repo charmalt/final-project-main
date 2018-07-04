@@ -24,15 +24,15 @@ A project to mimic the basic functionality of how an email service works. This i
 This was build over 10 days (Monday to the following Wednesday) by a team of five. The team followed standard XP values in an agile framework.
 
 ### <a name="team-process">Team process</a>
-[ waffle board here ]
+waffle board image here
+
 We broke user stories down into individual tasks/issues/tickets which each add acceptance criteria.
 
 We kept to a daily cycle of agile ceremonies of morning standup, post-lunch checkin, afternoon checkout. We were advised to work to two days sprints, so the morning of day one had a planning session and the afternoon of day two had a retro. Pairs were also rotated daily.
 
 We planned extensively at the beginning of the project the steps that our systems would need to go through, you can see that below.
 
-
-### <a name"plan">Original plan</a> and Minimal Viable Product (MVP)
+### <a name="plan">Original plan and MVP Minimal Viable Product (MVP)</a>
 ![MVP workflow](https://github.com/charmalt/final-project-main/blob/master/images/mvp-as-agreed.png "MVP workflow")
 
 Our MVP was to complete the process of a message from the point a user clicks 'send' through to the message entering another user's inbox, essentially all the solid line boxes above.
