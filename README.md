@@ -11,9 +11,9 @@
 ```
 
 ***
-[Summary](#summary)
-[The Project](#project): [Team process](#team-process) - [](#)
-[The Service](#service) - [](#) - [](#)
+[Summary](#summary)<br/>
+[The Project](#project): [Team process](#team-process) - [Original plan](#plan) - [Key learnings](#learnings) - [Potential enhancements](#enhancements)<br/>
+[The Service](#service) - [Technical architecture](#architecture) - [Send email](#workflow-send) - [Receive email](#workflow-receive) - [Installation](#installation) [Contributors](#contributors)
 ***
 
 ## <a name="summary">Summary</a>
@@ -54,12 +54,22 @@ Email is both very complicated and very simple. SMTP and POP require a very stri
 ## <a name="service">The Service</a>
 As the point of the project was to understand and recreate the full email process, we deliberately built
 
-## Technical architecture
+## <a name="architecture">Technical architecture</a>
 ![Summary of our technical architecture](https://github.com/charmalt/final-project-main/blob/master/images/summary-architecture.png "Summary of our technical architecture")
 
 [ Table of tech used here? ]
 
-### Installation (brace yourself)
+### <a name="workflow-send">Final send an email workflow</a>
+![Send an email workflow](https://github.com/charmalt/final-project-main/blob/master/images/summary-architecture.png "Send an email workflow")
+
+Words here.
+
+### <a name="workflow-receive">Final receive an email workflow</a>
+![Receive an email workflow](https://github.com/charmalt/final-project-main/blob/master/images/summary-architecture.png "Receive an email workflow")
+
+Words here.
+
+### <a name="installation">Installation</a> (brace yourself)
 Individual steps for each one can be found in there respective repos.
 
 1. The client
@@ -80,10 +90,10 @@ brew install postgresql
 ```
 
 
-### Contributors
+### <a name="contributors">Contributors</a> (The team)
 
-Charlene Chetcuti - [@charmalt](https://github.com/charmalt)
-Ben Furber - [@benfurber](https://github.com/benfurber)
-John Newman - [@JohnNewman1](https://github.com/JohnNewman1)
-George Sykes - [@georgesykes86](https://github.com/georgesykes86)
-Igor Ryabchuk - [@nixlim](https://github.com/nixlim)
+* **Charlene Chetcuti** - [@charmalt](https://github.com/charmalt)
+* **Ben Furber** - [@benfurber](https://github.com/benfurber)
+* **John Newman** - [@JohnNewman1](https://github.com/JohnNewman1)
+* **George Sykes** - [@georgesykes86](https://github.com/georgesykes86)
+* **Igor Ryabchuk** - [@nixlim](https://github.com/nixlim)
