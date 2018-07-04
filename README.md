@@ -60,12 +60,12 @@ As the point of the project was to understand and recreate the full email proces
 [ Table of tech used here? ]
 
 ### <a name="workflow-send">Final send an email workflow</a>
-![Send an email workflow](https://github.com/charmalt/final-project-main/blob/master/images/summary-architecture.png "Send an email workflow")
+![Send an email workflow](https://github.com/charmalt/final-project-main/blob/master/images/workflow-send.png "Send an email workflow")
 
 Words here.
 
 ### <a name="workflow-receive">Final receive an email workflow</a>
-![Receive an email workflow](https://github.com/charmalt/final-project-main/blob/master/images/summary-architecture.png "Receive an email workflow")
+![Receive an email workflow](https://github.com/charmalt/final-project-main/blob/master/images/workflow-receive.png "Receive an email workflow")
 
 Words here.
 
