@@ -17,14 +17,14 @@
 ***
 
 ## <a name="summary">Summary</a>
-A project to mimic the basic functionality of how an email service works. This includes (nearly) all the basic elements you'd require for your own email service; a web client, API for the web client, Simple Mail Transfer Protocol (SMTP) server, Post Office Protocol (POP) server and database (that we're hosting on Amazon Web Services).
+A project to mimic the basic functionality of how an email service works. This includes (nearly) all the basic elements you'd require for your own email service; a [web client](https://github.com/charmalt/final-project-client), API for the web client, [Simple Mail Transfer Protocol (SMTP) server](https://github.com/charmalt/final-project-smtp), [Post Office Protocol (POP) server](https://github.com/charmalt/final-project-pop) and database (that we're hosting on Amazon Web Services).
 
 
 ## <a name="project">The project</a>
 This was build over 10 days (Monday to the following Wednesday) by a team of five. The team followed standard XP values in an agile framework.
 
 ### <a name="team-process">Team process</a>
-We broke user stories down into individual tasks/issues/tickets which each add acceptance criteria.
+We broke user stories down into individual tasks/issues/tickets each of which we then added acceptance criteria to.
 
 We kept to a daily cycle of agile ceremonies of morning standup, post-lunch checkin, afternoon checkout. We were advised to work to two days sprints, so the morning of day one had a planning session and the afternoon of day two had a retro. Pairs were also rotated daily.
 
@@ -35,6 +35,7 @@ We planned extensively at the beginning of the project the steps that our system
 
 Our MVP was to complete the process of a message from the point a user clicks 'send' through to the message entering another user's inbox, essentially all the solid line boxes above.
 
+One important goal for the project was to have code that was understandable, well encapsulated and easy to extend. We took an Object Oriented Programming (OOP) approach and, although there are still plenty of areas we would like to improve if given the time, we tried to keep to Single Responsibility Principle.
 
 ### <a name="learnings">Key learnings and takeaways</a>
 Email is both very complicated and very simple. SMTP and POP require a very strict set of rules, but on the other hand they are fundamentally going through a set of steps we were able to research and then implement simplified versions of in a short timeframe.
@@ -43,9 +44,9 @@ Email is both very complicated and very simple. SMTP and POP require a very stri
 ### <a name="enhancements">Potential future enhancements</a>
 1. **User creation/authentication**. While the objects to create a user (including an encrypted password) into a database and half the work to do the relevant username and password validations were written, it wasn't central to our MVP and thus other work was prioritised during the final days of the project.
 
-2. **Error handling**. [ Can someone else detail the work done on this please? ]
+2. **Error handling**. Currently our servers have minimal error handling and error checking functionality. Future work would look to handle unexpected server events as well as implementing more robust checks for the handshake between server and clients.
 
-3. **Proper design of the client**. [ More here. ]
+3. **Proper design of the client**. Our mail client currently has a basic user interface will minimal functionality. New features might include pagination of emails, filtering, folders and the ability to search.
 
 4. **Full deployment**. We deployed our database and extra time was spent attempting to deploy the SMTP server on AWS. While the environment was successfully recreated and our scripts started, we didn't have the time to configure the firewall correctly to allow our custom TCP server script to listen on the correct port.
 
@@ -71,7 +72,7 @@ Words here.
 Words here.
 
 ### <a name="installation">Installation</a> (brace yourself)
-Individual steps for each one can be found in there respective repos.
+Individual steps for each of the components can be found in there respective repos.
 
 1. The client
 ```
@@ -85,11 +86,32 @@ git clone https://github.com/charmalt/final-project-smtp
 ```
 git clone https://github.com/charmalt/final-project-pop
 ```
-4. Postgres/whatever database you'd live
+4. Postgres/whatever database you'd like
 ```
 brew install postgresql
 ```
 
+## Testing
+
+### Testing Approach
+
+We took a test-driven development (TDD) approach to this project with extensive unit testing to ensure our code was behaving as we intended. We isolated our test objects using Jest's in-build mocking capabilities. We made sure to mock out any imported libraries as these should have been tested by the library developers. We also used Jest with Enzyme to help test React components.
+
+Certain key interfaces such as database connection and connecting to clients were tested using feature tests. One area for improvement would be to have more feature tests as this would have helped identify some issues with functionality at an earlier stage.
+
+### Code Style
+
+We used ESLint with Standard.js as the style guide to ensure we worked with a consistent coding style.
+
+## Deployment
+
+We investigated hosting each of the individual services on AWS however there were a number of technical challenges that let to a decision to de-prioritise deployment as it was not critical to MVP.
+
+The main technical challenges were:
+* The servers required a static IP and port to allow clients to access them
+* The hosting service required configuring to enable a TCP connection
+
+In the end we hosted a production PostgerSQL database on an Amazon EC2 instance that our servers could talk to.
 
 ### <a name="contributors">Contributors</a> (The team)
 
