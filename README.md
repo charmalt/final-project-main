@@ -24,8 +24,6 @@ A project to mimic the basic functionality of how an email service works. This i
 This was build over 10 days (Monday to the following Wednesday) by a team of five. The team followed standard XP values in an agile framework.
 
 ### <a name="team-process">Team process</a>
-waffle board image here
-
 We broke user stories down into individual tasks/issues/tickets which each add acceptance criteria.
 
 We kept to a daily cycle of agile ceremonies of morning standup, post-lunch checkin, afternoon checkout. We were advised to work to two days sprints, so the morning of day one had a planning session and the afternoon of day two had a retro. Pairs were also rotated daily.
@@ -43,19 +41,18 @@ Email is both very complicated and very simple. SMTP and POP require a very stri
 
 
 ### <a name="enhancements">Potential future enhancements</a>
-1. User creation/authentication. While the objects to create a user (including an encrypted password) and half the work to do the relevant username and password validations, it wasn't central to our MVP and thus prioritised other work during the final days of the project.
+1. **User creation/authentication**. While the objects to create a user (including an encrypted password) into a database and half the work to do the relevant username and password validations were written, it wasn't central to our MVP and thus other work was prioritised during the final days of the project.
 
-2. Error handling. [ Can someone else detail the work done on this please? ]
+2. **Error handling**. [ Can someone else detail the work done on this please? ]
 
-3. Proper design of the client. [ More here. ]
+3. **Proper design of the client**. [ More here. ]
 
-4. ???
-
+4. **Full deployment**. We deployed our database and extra time was spent attempting to deploy the SMTP server on AWS. While the environment was successfully recreated and our scripts started, we didn't have the time to configure the firewall correctly to allow our custom TCP server script to listen on the correct port.
 
 ## <a name="service">The Service</a>
-As the point of the project was to understand and recreate the full email process, we deliberately built
+As the point of the project was to understand and recreate the full email process, we deliberately built our own server scripts to run our mimic SMTP and POP servers.
 
-## <a name="architecture">Technical architecture</a>
+### <a name="architecture">Technical architecture</a>
 ![Summary of our technical architecture](https://github.com/charmalt/final-project-main/blob/master/images/summary-architecture.png "Summary of our technical architecture")
 
 Table of tech used here?
@@ -67,7 +64,7 @@ Table of tech used here?
 
 Words here.
 
-### <a name="workflow-receive">Final receive an email workflow</a>
+### <a name="workflow-receive">Final receive an email workflow</a>
 
 ![Receive an email workflow](https://github.com/charmalt/final-project-main/blob/master/images/workflow-receive.png "Receive an email workflow")
 
