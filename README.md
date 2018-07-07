@@ -74,15 +74,15 @@ Words here.
 ### <a name="installation">Installation</a> (brace yourself)
 Individual steps for each of the components can be found in there respective repos.
 
-1. The client
+1. [The client](https://github.com/charmalt/final-project-client)
 ```
 git clone https://github.com/charmalt/final-project-client
 ```
-2. SMTP
+2. [SMTP](https://github.com/charmalt/final-project-smtp)
 ```
 git clone https://github.com/charmalt/final-project-smtp
 ```
-3. POP
+3. [POP](https://github.com/charmalt/final-project-pop)
 ```
 git clone https://github.com/charmalt/final-project-pop
 ```
