@@ -53,6 +53,8 @@ Email is both very complicated and very simple. SMTP and POP require a very stri
 ## <a name="service">The Service</a>
 As the point of the project was to understand and recreate the full email process, we deliberately built our own server scripts to run our mimic SMTP and POP servers.
 
+
+
 ### <a name="architecture">Technical architecture</a>
 ![Summary of our technical architecture](https://github.com/charmalt/final-project-main/blob/master/images/summary-architecture.png "Summary of our technical architecture")
 
